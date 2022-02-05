@@ -7,7 +7,8 @@
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -29,26 +30,38 @@ header {
 
 /* <---// NAVBAR //---> */
 nav.nav_bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 15vh;
 }
 
 ul.nav_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
 }
 
 a.nav_link {
     color: #fdfefe;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1rem;
-    transition-duration: .250ms;
+    -webkit-transition-duration: .250ms;
+         -o-transition-duration: .250ms;
+            transition-duration: .250ms;
 }
 
 a.nav_link:hover {
@@ -57,10 +70,19 @@ a.nav_link:hover {
 
 /* <---// HERO //---> */
 .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     height: 85vh;
 }
 
@@ -109,10 +131,19 @@ main {
 /* <---// CONTENT //---> */
 section.content,
 div.sobre_link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 div.sobre_link a {
@@ -127,7 +158,8 @@ div.sobre_link button {
     border-radius: 38px;
     width: 246px;
     height: 56px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 div.sobre_link button:hover {
@@ -156,10 +188,19 @@ p#sobre_obras {
 
 /* <---// OBRAS //---> */
 .obras {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .obras h1 {
@@ -171,7 +212,9 @@ p#sobre_obras {
 
 .obras_imgs {
     width: 95vw;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     justify-items: center;
@@ -183,17 +226,24 @@ p#sobre_obras {
     max-width: 285px;
     height: auto;
     border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    transition-duration: 225ms;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    -webkit-transition-duration: 225ms;
+         -o-transition-duration: 225ms;
+            transition-duration: 225ms;
 }
 
 .obras_imgs img:hover {
-    transform: translateY(-5px);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    -webkit-transform: translateY(-5px);
+        -ms-transform: translateY(-5px);
+            transform: translateY(-5px);
+    -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 @media screen and (max-width: 768px) {
     .obras_imgs {
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 }
@@ -214,7 +264,8 @@ section.curiosidades {
     left: 0; 
     right: 0; 
     margin: auto;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 section.curiosidades h1 {
