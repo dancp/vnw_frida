@@ -249,21 +249,14 @@ p#sobre_obras {
 }
 
 /* <---// SOBRE //---> */
-main.sobre {
-    height: 2400px;
-}
-
 section.curiosidades {
     background-color: #fdfefe;
-    width: 1000px;
-    height: 2300px;
+    width: 75%;
     border-radius: 10px;
-    padding: 0 50px 50px 50px;
-    position: absolute;
-    top: 90%;
-    left: 0; 
-    right: 0; 
-    margin: auto;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    margin-top: -7rem;
+    margin-bottom: 7rem;
     -webkit-box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
             box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
@@ -291,42 +284,15 @@ section.curiosidades p {
     text-indent: 1.5;
 }
 
-@media screen and (max-width: 1100px) {
-    main.sobre {
-        height: 2750px;
-    }
-    section.curiosidades {
-        width: 800px;
-        height: 2650px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    main.sobre {
-        height: 2900px;
-    }
-    section.curiosidades {
-        width: 700px;
-        height: 2800px;
-    }
-}
 
 @media screen and (max-width: 768px) {
-    main.sobre {
-        height: 3750px;
-    }
     section.curiosidades {
-        width: 500px;
-        height: 3650px;
+        width: 90%;
     }
 }
 
 @media screen and (max-width: 576px) {
-    main.sobre {
-        height: 4450px;
-    }
     section.curiosidades {
-        width: 400px;
-        height: 4350px;
+        width: 95%;
     }
 }
