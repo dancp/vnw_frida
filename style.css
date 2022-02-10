@@ -253,7 +253,7 @@ section.curiosidades {
     background-color: #fdfefe;
     width: 75%;
     border-radius: 10px;
-    padding: 1rem 2rem;
+    padding: 6rem 2rem;
     margin: 0 auto;
     margin-top: -7rem;
     margin-bottom: 7rem;
@@ -265,7 +265,8 @@ section.curiosidades h1 {
     font-size: 3rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 5rem auto;
+    margin: 0 auto;
+    margin-bottom: 5rem;
 }
 
 section.curiosidades h2 {
